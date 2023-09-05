@@ -4,7 +4,7 @@ project(tjalib VERSION 0.1.0 LANGUAGES C CXX)
 include(CTest)
 enable_testing()
 
-file(GLOB_RECURSE TJALIB_SOURCE src/*.cpp src/*.h)
+file(GLOB_RECURSE TJALIB_SOURCE src/*)
 add_library(tjalib ${TJALIB_SOURCE})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
